@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.tweets {
+  margin: 0 auto;
+  border: 1px solid rgb(230, 236, 240);
+  width: 600px;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 53px;
+}
+
+.header__title {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.header__icon {
+  font-size: 15px;
+  color: rgba(29, 161, 242, 1);
+}
