@@ -4,6 +4,20 @@
 
 body {
   margin: 0;
+  font-size: 19px;
+}
+
+:root {
+  --main-blue: rgb(29, 161, 242);
+  --main-white: white;
+}
+
+.margin {
+  margin: 5px;
+}
+
+.margin--negative {
+  padding: -5px;
 }
 
 .tweets {
@@ -25,11 +39,71 @@ body {
 }
 
 .header__title {
-  font-size: 19px;
   font-weight: bold;
 }
 
 .header__icon {
   font-size: 15px;
-  color: rgba(29, 161, 242, 1);
+  color: var(--main-blue);
+}
+
+.user__image {
+  height: 50px;
+  width: 50px;
+}
+
+.user__image > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.post {
+  display: flex;
+}
+
+.post__image {
+}
+
+.post__form {
+  flex: 1;
+}
+
+.post__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.input input {
+  width: 100%;
+  height: 50px;
+  padding: 10px 0px;
+  font-size: 19px;
+  border: none;
+}
+
+.input input:focus {
+  outline: none;
+}
+
+.button {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-size: 15px;
+}
+
+.button--tweet {
+  background-color: var(--main-blue);
+  color: var(--main-white);
+  opacity: 0.5;
+}
+
+.icon {
+  padding: 10px;
+}
+
+.icon--tweet {
+  color: var(--main-blue);
 }
