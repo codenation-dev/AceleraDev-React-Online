@@ -9,7 +9,10 @@ body {
 
 :root {
   --main-blue: rgb(29, 161, 242);
+  --main-blue-light: rgba(29, 161, 242, 0.2);
   --main-white: white;
+  --main-gray: rgb(101, 119, 134);
+  --main-gray-light: rgb(245, 248, 250);
 }
 
 .margin {
@@ -17,7 +20,8 @@ body {
 }
 
 .margin--negative {
-  padding: -5px;
+  margin-right: -5px;
+  margin-left: -5px;
 }
 
 .tweets {
@@ -27,8 +31,12 @@ body {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 5px 15px;
+  border-top: 1px solid rgb(230, 236, 240);
+}
+
+.container:hover {
+  background-color: var(--main-gray-light);
 }
 
 .header {
@@ -102,8 +110,38 @@ body {
 
 .icon {
   padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: var(--main-blue-light);
+  color: var(--main-blue);
+  border-radius: 100%;
 }
 
 .icon--tweet {
+  color: var(--main-gray);
+}
+
+.icon--post-tweet {
   color: var(--main-blue);
+}
+
+.tweet {
+  display: flex;
+}
+
+.tweet__container {
+  flex: 1;
+}
+
+.tweet__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.tweet__icon-number {
+  font-size: 13px;
 }
