@@ -39,6 +39,10 @@ body {
   background-color: var(--main-gray-light);
 }
 
+.container--no-hover:hover {
+  background-color: var(--main-white);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -109,7 +113,6 @@ body {
 }
 
 .icon {
-  padding: 10px;
   font-size: 15px;
   cursor: pointer;
 }
@@ -125,6 +128,7 @@ body {
 }
 
 .icon--post-tweet {
+  padding: 10px;
   color: var(--main-blue);
 }
 
@@ -144,4 +148,15 @@ body {
 
 .tweet__icon-number {
   font-size: 13px;
+}
+
+.tweet__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tweet__header-title {
+  font-size: 15px;
+  font-weight: bold;
 }
