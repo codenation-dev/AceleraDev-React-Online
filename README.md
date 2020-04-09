@@ -7,7 +7,7 @@
 </h2>
 
 <p align="center">
-  <img alt="GitHub" src="<img alt="GitHub" src="https://img.shields.io/github/license/codenation-dev/AceleraDev-React-Online?color=7800ff">">
+  <img alt="GitHub" src="<img alt="GitHub" src="https://img.shields.io/github/license/codenation-dev/AceleraDev-React-Online?color=7800ff">
 
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/codenation-dev/AceleraDev-React-Online?color=7800ff&style=plastic">
 
