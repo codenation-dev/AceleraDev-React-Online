@@ -14,6 +14,10 @@
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/codenation-dev/AceleraDev-React-Online?color=7800ff&style=plastic">
 
   <a href="https://github.com/codenation-dev/AceleraDev-React-Online/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/codenation-dev/AceleraDev-React-Online?style=social">
+  </a>
+
+  <a href="https://github.com/codenation-dev/AceleraDev-React-Online/network/members">
     <img alt="Stargazers" src="https://img.shields.io/github/forks/codenation-dev/AceleraDev-React-Online?style=social">
   </a>
 
@@ -23,9 +27,9 @@
 
 É um programa de capacitação gratuito para profissionais de tecnologia. Durante **10 semanas**, devs e cientistas de dados têm acesso a desafios, conteúdos e à Comunidade Codenation para adquirirem e praticarem as habilidades técnicas mais utilizadas por empresas de tecnologia de todo o mundo.
 
-Aceleração React Online iniciou dia 06/04/2020 e será finalizado dia 15/06/2020.
+Aceleração React Online iniciou dia **06/04/2020** e será finalizado dia **15/06/2020**.
 
-📑 Toda documentação referente aceleração pode ser encontrada no site da codenation, basta clicar [aqui](https://docs.google.com/document/d/1Yrf3gDddKxwyNqo-CjC_B2hQYKulvDpDQunImfnNzWU/edit#heading=h.wzid2ftslq5e)
+📑 Toda documentação referente aceleração pode ser encontrada no site da codenation, basta clicar **[aqui](https://docs.google.com/document/d/1Yrf3gDddKxwyNqo-CjC_B2hQYKulvDpDQunImfnNzWU/edit#heading=h.wzid2ftslq5e)**
 
 
 ## :calendar: Cronograma
@@ -55,12 +59,12 @@ O curso é dividido em 10 módulos e cada módulo possui uma pasta neste reposí
 
 ## :mega: Projeto Final
 
-Para verificar o que é necessário para realização do mesmo, pode acessar o diretório do mesmo clicando [aqui]()
+Para verificar o que é necessário para realização do mesmo, pode acessar o diretório do mesmo clicando **[aqui](https://github.com/codenation-dev/AceleraDev-React-Online/tree/master/projetoFinal)**
 
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://raw.githubusercontent.com/kaiorr/aceleraDevReact/master/LICENSE) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo **[LICENSE](https://raw.githubusercontent.com/codenation-dev/AceleraDev-React-Online/master/LICENSE)** para mais detalhes.
 
 ----
 
