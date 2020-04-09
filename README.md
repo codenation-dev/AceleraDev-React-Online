@@ -1,16 +1,67 @@
-# AceleraDev React Online
+<p align="center">
+  <img alt="aceleradevreact" title="aceleradevreact" src="assets/logo.svg" />
+</p>
 
-Repositório com os códigos das aulas do curso AceleraDev React Online
+<h2 align="center">
+:computer: :running:  AceleraDev React Online  :love_letter:
+</h2>
+
+<p align="center">
+  <img alt="GitHub" src="<img alt="GitHub" src="https://img.shields.io/github/license/codenation-dev/AceleraDev-React-Online?color=7800ff">">
+
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/codenation-dev/AceleraDev-React-Online?color=7800ff&style=plastic">
+
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/codenation-dev/AceleraDev-React-Online?color=7800ff&style=plastic">
+
+  <a href="https://github.com/codenation-dev/AceleraDev-React-Online/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/forks/codenation-dev/AceleraDev-React-Online?style=social">
+  </a>
+
+</p>
+
+## :zap: Sobre o Programa de Aceleração
+
+É um programa de capacitação gratuito para profissionais de tecnologia. Durante **10 semanas**, devs e cientistas de dados têm acesso a desafios, conteúdos e à Comunidade Codenation para adquirirem e praticarem as habilidades técnicas mais utilizadas por empresas de tecnologia de todo o mundo.
+
+Aceleração React Online iniciou dia 06/04/2020 e será finalizado dia 15/06/2020.
+
+📑 Toda documentação referente aceleração pode ser encontrada no site da codenation, basta clicar [aqui](https://docs.google.com/document/d/1Yrf3gDddKxwyNqo-CjC_B2hQYKulvDpDQunImfnNzWU/edit#heading=h.wzid2ftslq5e)
+
+
+## :calendar: Cronograma
 
 O curso é dividido em 10 módulos e cada módulo possui uma pasta neste reposítório
+>
+> 👉 **Módulo 1: Browser Engine, Motores e Debugging**
 
-- Módulo 1: Browser Engine, Motores e Debugging
-- Módulo 2: HTML5 e CSS3, Atomic Design e CSS Modular
-- Módulo 3: Javascript I, Fundamentos da Linguagem
-- Módulo 4: Javascript II, Paradigmas e Testes
-- Módulo 5: React I, Fundamentos e React OO
-- Módulo 6: React II, Fundamentos e React OO
-- Módulo 7: React Hooks, React Funcional
-- Módulo 8: Redux, Gerenciamento de Estado
-- Módulo 9: Redux, Build e Deploy
-- Módulo 10: Demo Day
+> 👉 **Módulo 2: HTML5 e CSS3, Atomic Design e CSS Modular**
+
+> 👉 **Módulo 3: Javascript I, Fundamentos da Linguagem**
+
+> 👉 **Módulo 4: Javascript II, Paradigmas e Testes**
+
+> 👉 **Módulo 5: React I, Fundamentos e React OO**
+
+> 👉 **Módulo 6: React II, Fundamentos e React OO**
+
+> 👉 **Módulo 7: React Hooks, React Funcional**
+
+> 👉 **Módulo 8: Redux, Gerenciamento de Estado**
+
+> 👉 **Módulo 9: Redux, Build e Deploy**
+
+> 👉 **Módulo 10: Demo Day**
+>
+
+## :mega: Projeto Final
+
+Para verificar o que é necessário para realização do mesmo, pode acessar o diretório do mesmo clicando [aqui]()
+
+
+## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://raw.githubusercontent.com/kaiorr/aceleraDevReact/master/LICENSE) para mais detalhes.
+
+----
+
+Feito com :purple_heart: por **Codenation** 
