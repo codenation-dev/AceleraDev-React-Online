@@ -62,6 +62,21 @@ O curso é dividido em 10 módulos e cada módulo possui uma pasta neste reposí
 Para verificar o que é necessário para realização do mesmo, pode acessar o diretório do mesmo clicando **[aqui](https://github.com/codenation-dev/AceleraDev-React-Online/tree/master/projetoFinal)**
 
 
+## :clap: Empresas Apoiadoras:
+
+- 🤝 **[CI&T](https://br.ciandt.com/carreiras/we-are-hiring)**
+- 🤝 **[Conta Azul](https://contaazul.com/carreiras/)**
+- 🤝 **[Guia Bolso](https://jobs.kenoby.com/guiabolso)**
+- 🤝 **[Pague Veloz](https://www.pagueveloz.com.br/)**
+- 🤝 **[Rocket Chat](https://rocket.chat/jobs)**
+- 🤝 **[Sanar](https://jobs.kenoby.com/sanar)**
+- 🤝 **[Nexfar](https://nexfar.com.br/#/)**
+- 🤝 **[Magrathea](https://careers.magrathealabs.com/)**
+- 🤝 **[Senior](https://www.senior.com.br/carreiras)**
+- 🤝 **[Voyager](https://www.voyagerportal.com/company/)**
+
+
+
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo **[LICENSE](https://raw.githubusercontent.com/codenation-dev/AceleraDev-React-Online/master/LICENSE)** para mais detalhes.
