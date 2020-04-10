@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="fashionista" title="fashionista" src="assets/projFinal.png" />
+  <img alt="fashionista" title="fashionista" src="assets/header.gif" />
 </p>
 
 ----

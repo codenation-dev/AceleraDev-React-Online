@@ -29,12 +29,13 @@
 
 Aceleração React Online iniciou dia **06/04/2020** e será finalizado dia **15/06/2020**.
 
-📑 Toda documentação referente aceleração pode ser encontrada no site da codenation, basta clicar **[aqui](https://docs.google.com/document/d/1Yrf3gDddKxwyNqo-CjC_B2hQYKulvDpDQunImfnNzWU/edit#heading=h.wzid2ftslq5e)**
+**📑 Toda documentação referente aceleração pode ser encontrada no site da codenation, basta clicar [aqui](https://docs.google.com/document/d/1Yrf3gDddKxwyNqo-CjC_B2hQYKulvDpDQunImfnNzWU/edit#heading=h.wzid2ftslq5e)**
 
 
 ## :calendar: Cronograma
 
-O curso é dividido em 10 módulos e cada módulo possui uma pasta neste reposítório
+O curso é dividido em 10 módulos e cada módulo possui uma pasta neste reposítório. Toda semana é liberado um novo módulo com desafio a ser realizado. Portanto a melhor forma de fixar e exercitar o conteúdo é realizando o desafio proposto.
+
 >
 > 👉 **Módulo 1: Browser Engine, Motores e Debugging**
 
@@ -59,7 +60,7 @@ O curso é dividido em 10 módulos e cada módulo possui uma pasta neste reposí
 
 ## :mega: Projeto Final
 
-Para verificar o que é necessário para realização do mesmo, pode acessar o diretório do mesmo clicando **[aqui](https://github.com/codenation-dev/AceleraDev-React-Online/tree/master/projetoFinal)**
+**:dart: Para verificar o que é necessário para realização do projeto, basta acessar o diretório do mesmo clicando [aqui](https://github.com/codenation-dev/AceleraDev-React-Online/tree/master/projetoFinal)**
 
 
 ## :clap: Empresas Apoiadoras:
