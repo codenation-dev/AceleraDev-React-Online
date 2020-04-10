@@ -58,9 +58,14 @@ O curso é dividido em 10 módulos e cada módulo possui uma pasta neste reposí
 > 👉 **Módulo 10: Demo Day**
 >
 
+----
+
 ## :mega: Projeto Final
 
 **:dart: Para verificar o que é necessário para realização do projeto, basta acessar o diretório do mesmo clicando [aqui](https://github.com/codenation-dev/AceleraDev-React-Online/tree/master/projetoFinal)**
+
+
+
 
 
 ## :clap: Empresas Apoiadoras:
