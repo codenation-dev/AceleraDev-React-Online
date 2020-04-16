@@ -1,15 +1,13 @@
 {
-  "name": "projeto-aula-hello-world",
+  "name": "projeto-aula-calculadora",
   "version": "1.0.0",
-  "description": "Projeto hello world para o node JS",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "node"
-  ],
-  "author": "Henrique Jensen",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "prompt-sync": "^4.2.0"
