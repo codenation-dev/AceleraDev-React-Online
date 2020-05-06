@@ -6,21 +6,23 @@ import {
   CardBody,
   CardImg,
   CardText,
-  CardTitle,
+  CardTitle
 } from "./components/Card";
 import FormGroup from "./components/FormGroup";
 import Container from "./components/Container";
 import Label from "./components/Label";
 import Loading from "./components/Loading";
 import Select from "./components/Select";
-import data from "./data/data.json";
 import "./App.css";
+
+import data from "./data/data.json";
 
 import {
   filterByStatus,
   filterByGender,
-  generateEpisodesCharacters,
+  generateEpisodesCharacters
 } from "./utils";
+import { URL } from "./constants";
 
 class App extends React.Component {
   constructor(props) {
@@ -28,19 +30,22 @@ class App extends React.Component {
     this.state = {
       name: "React",
       characters: [],
-      loading: false,
+      originalCharacters: [],
+      loading: false
     };
   }
 
-  componentDidMount() {
+  async componentDidMount() {
     this.setState({ loading: true });
 
-    setTimeout(() => {
-      this.setState({
-        characters: data.results,
-        loading: false,
-      });
-    }, 2000);
+    const response = await fetch(URL)
+      .then(resp => resp.json())
+      .then(data => data.results);
+
+    this.setState({
+      characters: response,
+      loading: false
+    });
   }
 
   handleClickStatus(event, status) {
@@ -53,7 +58,7 @@ class App extends React.Component {
     }
 
     this.setState({
-      characters: newCharacters,
+      characters: newCharacters
     });
   }
 
@@ -67,14 +72,14 @@ class App extends React.Component {
     }
 
     this.setState({
-      characters: newCharacters,
+      characters: newCharacters
     });
   }
 
   handleChange(episode) {
     const episodes = generateEpisodesCharacters(data.results);
     this.setState({
-      characters: episodes[episode],
+      characters: episodes[episode]
     });
   }
 
@@ -86,19 +91,19 @@ class App extends React.Component {
           <div data-testid="all-status">
             <Button
               name="Todos"
-              handleClick={(event) => this.handleClickStatus(event, "")}
+              handleClick={event => this.handleClickStatus(event, "")}
             />
             <Button
               name="Vivo"
-              handleClick={(event) => this.handleClickStatus(event, "Alive")}
+              handleClick={event => this.handleClickStatus(event, "Alive")}
             />
             <Button
               name="Morto"
-              handleClick={(event) => this.handleClickStatus(event, "Dead")}
+              handleClick={event => this.handleClickStatus(event, "Dead")}
             />
             <Button
               name="Desconhecido"
-              handleClick={(event) => this.handleClickStatus(event, "unknown")}
+              handleClick={event => this.handleClickStatus(event, "unknown")}
             />
           </div>
         </FormGroup>
@@ -108,19 +113,19 @@ class App extends React.Component {
           <div data-testid="all-genders">
             <Button
               name="Todos"
-              handleClick={(event) => this.handleClickGender(event, "")}
+              handleClick={event => this.handleClickGender(event, "")}
             />
             <Button
               name="Homem"
-              handleClick={(event) => this.handleClickGender(event, "Male")}
+              handleClick={event => this.handleClickGender(event, "Male")}
             />
             <Button
               name="Mulher"
-              handleClick={(event) => this.handleClickGender(event, "Female")}
+              handleClick={event => this.handleClickGender(event, "Female")}
             />
             <Button
               name="Desconhecido"
-              handleClick={(event) => this.handleClickGender(event, "unknown")}
+              handleClick={event => this.handleClickGender(event, "unknown")}
             />
           </div>
         </FormGroup>
@@ -129,14 +134,14 @@ class App extends React.Component {
           <Label label="Episódio" />
           <Select
             options={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]}
-            handleChange={(value) => this.handleChange(value)}
+            handleChange={value => this.handleChange(value)}
           />
         </FormGroup>
 
         {this.state.loading ? <Loading /> : null}
 
         <section>
-          {this.state.characters.map((character) => {
+          {this.state.characters.map(character => {
             return (
               <Card key={character.id}>
                 <CardImg image={character.image} alt={character.name} />
