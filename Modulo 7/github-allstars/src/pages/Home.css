@@ -1,0 +1,10 @@
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 18rem;
+  margin: 1rem;
+}
