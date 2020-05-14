@@ -3,6 +3,8 @@ import "./Home.css";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
+import { Link } from "react-router-dom";
+
 import { getUsers } from "../service";
 
 function Home() {
@@ -19,9 +21,9 @@ function Home() {
           <Card.Img variant="top" src={user.avatar_url} />
           <Card.Body>
             <Card.Title>{user.login}</Card.Title>
-            <a href="/user">
+            <Link to={`/user/${user.login}`}>
               <Button variant="secondary">Perfil</Button>
-            </a>
+            </Link>
           </Card.Body>
         </Card>
       ))}

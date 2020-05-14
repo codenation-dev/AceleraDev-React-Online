@@ -4,6 +4,7 @@ import Image from "react-bootstrap/Image";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Spinner from "react-bootstrap/Spinner";
+import { useParams } from "react-router";
 
 import { getUser, getUserRepos } from "../service";
 
@@ -11,17 +12,15 @@ function Profile() {
   const [user, setUser] = React.useState({});
   const [loading, setLoading] = React.useState(true);
   const [repos, setRepos] = React.useState([]);
+  const { name } = useParams();
 
   React.useEffect(() => {
-    Promise.all([
-      getUser("henriquejensen"),
-      getUserRepos("henriquejensen")
-    ]).then(values => {
+    Promise.all([getUser(name), getUserRepos(name)]).then(values => {
       setUser(values[0]);
       setRepos(values[1]);
       setLoading(false);
     });
-  }, []);
+  }, [name]);
 
   if (loading) {
     return (
