@@ -19,18 +19,15 @@ class App extends React.Component {
       hasSearchFilter: false,
       searchFilter: [],
       sortBy: "",
-      sortedContacts: [],
+      sortedContacts: []
     };
-
-    this.searchFilter = this.searchFilter.bind(this);
-    this.toggleSortByValue = this.toggleSortByValue.bind(this);
   }
 
-  searchFilter(name) {
+  searchFilter = name => {
     const { contacts } = this.state;
 
     if (name.length > 0) {
-      const filteredContacts = contacts.filter((contact) => {
+      const filteredContacts = contacts.filter(contact => {
         return convertToLowercase(contact.name).includes(
           convertToLowercase(name)
         );
@@ -39,18 +36,18 @@ class App extends React.Component {
       this.setState({
         ...this.state,
         hasSearchFilter: true,
-        searchFilter: filteredContacts,
+        searchFilter: filteredContacts
       });
     } else {
       this.setState({
         ...this.state,
         hasSearchFilter: false,
-        searchFilter: [],
+        searchFilter: []
       });
     }
-  }
+  };
 
-  toggleSortByValue(value) {
+  toggleSortByValue = value => {
     const compareValues = (key, order = "asc") => {
       return function innerSort(a, b) {
         if (!a.hasOwnProperty(key) || !b.hasOwnProperty(key)) {
@@ -89,14 +86,14 @@ class App extends React.Component {
       hasSearchFilter: false,
       searchFilter: [],
       sortBy: sortValue,
-      sortedContacts,
+      sortedContacts
     });
-  }
+  };
 
   componentDidMount() {
     fetch(URL)
-      .then((response) => response.json())
-      .then((data) => this.setState({ contacts: data }));
+      .then(response => response.json())
+      .then(data => this.setState({ contacts: data }));
   }
 
   render() {
@@ -105,25 +102,25 @@ class App extends React.Component {
       hasSearchFilter,
       searchFilter,
       sortBy,
-      sortedContacts,
+      sortedContacts
     } = this.state;
 
     let outputContacts;
 
     if (!hasSearchFilter) {
       if (contacts.length > 0 && sortedContacts.length > 0) {
-        outputContacts = sortedContacts.map((contact) => (
+        outputContacts = sortedContacts.map(contact => (
           <Contact key={contact.id} data={contact} />
         ));
       } else if (contacts.length > 0 && sortedContacts.length === 0) {
-        outputContacts = contacts.map((contact) => (
+        outputContacts = contacts.map(contact => (
           <Contact key={contact.id} data={contact} />
         ));
       } else {
         outputContacts = <h2>Loading...</h2>;
       }
     } else {
-      outputContacts = searchFilter.map((contact) => (
+      outputContacts = searchFilter.map(contact => (
         <Contact key={contact.id} data={contact} />
       ));
     }

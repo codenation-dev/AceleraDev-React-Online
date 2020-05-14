@@ -17,9 +17,9 @@ function App() {
   const [sortBy, setSortBy] = React.useState("");
   const [sortedContacts, setSortedContacts] = React.useState([]);
 
-  const handleSearchFilter = (name) => {
+  const handleSearchFilter = name => {
     if (name.length > 0) {
-      const filteredContacts = contacts.filter((contact) => {
+      const filteredContacts = contacts.filter(contact => {
         return convertToLowercase(contact.name).includes(
           convertToLowercase(name)
         );
@@ -32,7 +32,7 @@ function App() {
       setSearchFilter([]);
     }
   };
-  const toggleSortByValue = (value) => {
+  const toggleSortByValue = value => {
     const compareValues = (key, order = "asc") => {
       return function innerSort(a, b) {
         if (!a.hasOwnProperty(key) || !b.hasOwnProperty(key)) {
@@ -72,26 +72,26 @@ function App() {
 
   React.useEffect(() => {
     fetch(URL)
-      .then((response) => response.json())
-      .then((data) => setContacts(data));
+      .then(response => response.json())
+      .then(data => setContacts(data));
   }, []);
 
   let outputContacts;
 
   if (!hasSearchFilter) {
     if (contacts.length > 0 && sortedContacts.length > 0) {
-      outputContacts = sortedContacts.map((contact) => (
+      outputContacts = sortedContacts.map(contact => (
         <Contact key={contact.id} data={contact} />
       ));
     } else if (contacts.length > 0 && sortedContacts.length === 0) {
-      outputContacts = contacts.map((contact) => (
+      outputContacts = contacts.map(contact => (
         <Contact key={contact.id} data={contact} />
       ));
     } else {
       outputContacts = <h2>Loading...</h2>;
     }
   } else {
-    outputContacts = searchFilter.map((contact) => (
+    outputContacts = searchFilter.map(contact => (
       <Contact key={contact.id} data={contact} />
     ));
   }
