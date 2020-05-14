@@ -1,0 +1,12 @@
+.contacts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+@media screen and (min-width: 728px) {
+  .contacts {
+    padding: 16px 0;
+  }
+}
