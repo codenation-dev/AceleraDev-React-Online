@@ -1,51 +1,63 @@
-import React from 'react'
+import React from "react";
 
-export default function Post() {
+export default function Post({ post }) {
+  const {
+    name,
+    user_thumb,
+    user_name,
+    post_figure,
+    likes_number,
+    show_like,
+  } = post;
   return (
-    <article class="post">
-          <header class="post__header">
-            <div class="user">
-              <a href="#" class="user__thumb">
-                <img src="img/profiles/yoda/yoda-profile.jpg" alt="">
-              </a>
+    <article className="post">
+      <header className="post__header">
+        <div className="user">
+          <a href={`/${name}`} className="user__thumb">
+            <img src={user_thumb} alt={name} />
+          </a>
 
-              <a href="#" class="user__name">Mestre Yoda</a>
-            </div>
+          <a href={`/${name}`} className="user__name">
+            {user_name}
+          </a>
+        </div>
 
-            <button class="post__context">
-              <i class="fas fa-ellipsis-h"></i>
-            </button>
-          </header>
+        <button className="post__context">
+          <i className="fas fa-ellipsis-h"></i>
+        </button>
+      </header>
 
-          <figure class="post__figure">
-            <img src="img/profiles/yoda/yoda-1.jpg" alt="">
-          </figure>
+      <figure className="post__figure">
+        <img src={post_figure} alt="post figure" />
+      </figure>
 
-          <nav class="post__controls">
-            <button class="post__control">
-              <i class="far fa-heart"></i>
-            </button>
+      <nav className="post__controls">
+        <button className="post__control">
+          <i className="far fa-heart"></i>
+        </button>
 
-            <button class="post__control">
-              <i class="far fa-comment"></i>
-            </button>
+        <button className="post__control">
+          <i className="far fa-comment"></i>
+        </button>
 
-            <button class="post__control">
-              <i class="far fa-bookmark"></i>
-            </button>
-          </nav>
+        <button className="post__control">
+          <i className="far fa-bookmark"></i>
+        </button>
+      </nav>
 
-          <div class="post__status">
-            <div class="user">
-              <a href="#" class="user__thumb">
-                <img src="img/profiles/domino/domino-profile.jpg" alt="">
-              </a>
-
-              <span>
-              curtido por <a href="#">Domino</a> e outras <a href="#">7 pessoas</a>
+      <div className="post__status">
+        {show_like && (
+          <div className="user">
+            <a href={`/${name}`} className="user__thumb">
+              <img src={show_like.user_thumb} alt={show_like.user_name} />
+            </a>
+            <span>
+              curtido por <a href={`/${name}`}>{show_like.user_name}</a> e
+              outras <a href={`/${name}`}>{likes_number} pessoas</a>
             </span>
-            </div>
           </div>
-        </article>
-  )
+        )}
+      </div>
+    </article>
+  );
 }
