@@ -3,3 +3,5 @@ node_modules/
 
 challenge/
 coverage/
+# Local Netlify folder
+.netlify
