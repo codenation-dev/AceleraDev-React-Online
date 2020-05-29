@@ -1,13 +1,15 @@
 import React from "react";
 
-export default function Post({ post }) {
+export default function Post({ post, onClickLike }) {
   const {
+    id,
     name,
     user_thumb,
     user_name,
     post_figure,
     likes_number,
     show_like,
+    liked
   } = post;
   return (
     <article className="post">
@@ -32,8 +34,8 @@ export default function Post({ post }) {
       </figure>
 
       <nav className="post__controls">
-        <button className="post__control">
-          <i className="far fa-heart"></i>
+        <button className="post__control" onClick={() => onClickLike(id)}>
+          <i className={`${liked ? "fas" : "far"} fa-heart`}></i>
         </button>
 
         <button className="post__control">

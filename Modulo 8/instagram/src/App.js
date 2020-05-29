@@ -25,21 +25,21 @@ function App() {
     {
       id: 1,
       user_thumb: yoda,
-      user_name: "Mestre Yoda",
+      user_name: "Mestre Yoda"
     },
     {
       id: 2,
       user_thumb: gamora,
-      user_name: "Gamora",
+      user_name: "Gamora"
     },
     {
       id: 3,
       user_thumb: blackpanther,
-      user_name: "Black Panther",
-    },
+      user_name: "Black Panther"
+    }
   ]);
 
-  const [posts] = React.useState([
+  const [posts, setPosts] = React.useState([
     {
       id: 1,
       user_name: "Mestre Yoda",
@@ -48,8 +48,9 @@ function App() {
       likes_number: 7,
       show_like: {
         user_name: "Domino",
-        user_thumb: domino,
+        user_thumb: domino
       },
+      liked: true
     },
     {
       id: 2,
@@ -59,8 +60,8 @@ function App() {
       likes_number: 7,
       show_like: {
         user_name: "Carol Danvers",
-        user_thumb: carol,
-      },
+        user_thumb: carol
+      }
     },
     {
       id: 3,
@@ -70,8 +71,8 @@ function App() {
       likes_number: 5,
       show_like: {
         user_name: "Bruce Wayne",
-        user_thumb: bruce,
-      },
+        user_thumb: bruce
+      }
     },
     {
       id: 4,
@@ -81,8 +82,8 @@ function App() {
       likes_number: 7,
       show_like: {
         user_name: "Mestre Yoda",
-        user_thumb: yoda,
-      },
+        user_thumb: yoda
+      }
     },
     {
       id: 5,
@@ -92,8 +93,8 @@ function App() {
       likes_number: 3,
       show_like: {
         user_name: "T'Challa",
-        user_thumb: blackpanther,
-      },
+        user_thumb: blackpanther
+      }
     },
     {
       id: 6,
@@ -103,10 +104,22 @@ function App() {
       likes_number: 2,
       show_like: {
         user_name: "Gamora Zen",
-        user_thumb: gamora,
-      },
-    },
+        user_thumb: gamora
+      }
+    }
   ]);
+
+  const handleLike = id => {
+    setPosts(
+      posts.map(post => {
+        if (post.id === id) {
+          return { ...post, liked: !post.liked };
+        }
+        return post;
+      })
+    );
+  };
+
   return (
     <>
       <Header />
@@ -114,7 +127,7 @@ function App() {
       <div className="container">
         <section className="stories">
           <div className="stories__container">
-            {stories.map((story) => (
+            {stories.map(story => (
               <Story key={story.id} story={story} />
             ))}
           </div>
@@ -123,8 +136,8 @@ function App() {
 
       <div className="container">
         <section className="feed">
-          {posts.map((post) => (
-            <Post key={post.id} post={post} />
+          {posts.map(post => (
+            <Post key={post.id} post={post} onClickLike={handleLike} />
           ))}
         </section>
       </div>
