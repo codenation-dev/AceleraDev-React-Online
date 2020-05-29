@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Story({ story }) {
+export default function Story({ story = {} }) {
   const { user_thumb, user_name } = story;
   return (
     <a href={`/${user_name}`} className="user__thumb">

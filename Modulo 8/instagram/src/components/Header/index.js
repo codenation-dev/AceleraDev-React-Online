@@ -1,13 +1,11 @@
 import React from "react";
 
-import logo from "../../images/instagram-logo.svg";
-
 export default function Header() {
   return (
     <header className="topbar">
       <div className="container">
         <a href="/" className="topbar__logo">
-          <img src={logo} alt="Instagram logo" />
+          <img src="img/instagram-logo.svg" alt="Instagram logo" />
         </a>
 
         <button className="topbar__icon">

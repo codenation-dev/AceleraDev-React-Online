@@ -1,4 +1,4 @@
-import { SET_LIKE } from "./actionTypes";
+import { SET_LIKE } from "./actionsTypes";
 
 export function setLike(id) {
   return {
